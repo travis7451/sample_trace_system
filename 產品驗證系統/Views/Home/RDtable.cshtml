@@ -1,0 +1,223 @@
+﻿@using static 產品驗證系統.Controllers.HomeController
+<html lang="en">
+<header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">產品驗證系統</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">產品追蹤</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link text-dark"  asp-area="" asp-controller="Home" asp-action="Login">登入</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<body>
+<section class="content">
+<div class="container-fluid">
+<div class="card card-primary ">
+<div class="card-header">
+<h3 class="card-title">RD查詢系統</h3>
+</div>
+<div class="card-body">
+<div class="row">
+<div class="col-md-2">
+<div class="form-group">
+<label>等級</label>
+<select class="form-control select2" style="width: 100%;" id="rdtabsel1">
+<option selected="selected">急件</option>
+<option>次急件</option>
+<option>平件</option>
+</select>
+</div>
+</div>
+<div class="col-5">
+<label >產品序號起
+</label>
+<input type="text" class="form-control" id="rdtabtext2">
+</div>
+<div class="col-5">
+<label >產品序號迄</label>
+<input type="text" class="form-control" id="rdtabtext3">
+</div>
+<div class="col-md-2">
+<div class="form-group">
+<label>狀態</label>
+<select class="form-control select2" style="width: 100%;" id="rdtabsel4">
+<option selected="selected">已完成</option>
+<option>NEW</option>
+</select>
+</div>
+</div>
+<div class="col-5">
+<label for="exampleInputPassword1">料號</label>
+<input type="text" class="form-control" id="rdtabtext5">
+</div>
+</div>
+</div>
+<div class="card-footer">
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</div>
+</section>
+
+
+
+
+<div class="card">
+<div class="card-header border-0">
+<h3 class="card-title">RD產品追蹤系統</h3>
+<div class="card-tools">
+<a href="#" class="btn btn-tool btn-sm">
+<i class="fas fa-upload"></i>
+</a>
+<a href="#" class="btn btn-tool btn-sm">
+<i class="fas fa-bars"></i>
+</a>
+</div>
+</div>
+<div class="card-body table-responsive p-0">
+<table class="table table-striped table-valign-middle table-hover">
+<thead>
+<tr>
+<th>等級</th>
+<th>產品序號起</th>
+<th>產品序號迄</th>
+<th>料號</th>
+<th>已驗未歸</th>
+<th>已延遲</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>
+        <span class="badge bg-warning">次急件</span>
+    </td>
+<td>122222400653
+</td>
+<td>122222400661
+</td>
+<td>SV250-300B
+</td>
+
+<td>1</td>
+<td>
+<small class="text-success mr-1">
+<i class="fas fa-arrow-down"></i>
+60%
+</small>
+3
+</td>
+<td>
+<a href="#" class="text-muted">
+<i class="fas fa-search"></i>
+</a>
+</td>
+</tr>
+<tr>
+    <td>
+        <span class="badge bg-primary">平件</span>
+    </td>
+<td>122223100416
+</td>
+<td>122223100512
+</td>
+<td>SX560-325C
+</td>
+
+<td>27</td>
+<td>
+<small class="text-danger mr-1">
+<i class="fas fa-arrow-up"></i>
+37%
+</small>
+42
+</td>
+<td>
+<a href="#" class="text-muted">
+<i class="fas fa-search"></i>
+</a>
+</td>
+</tr>
+<tr>
+    <td>
+        <span class="badge bg-primary">平件</span>
+        <span class="badge bg-success">已完成</span>
+    </td>
+<td>122223101980
+</td>
+<td>122223102053
+</td>
+<td>SX210-64
+</td>
+
+<td>0</td>
+<td>
+<small class="text-success mr-1">
+<i class="fas fa-arrow-down"></i>
+7%
+</small>
+0
+</td>
+<td>
+<a href="#" class="text-muted">
+<i class="fas fa-search"></i>
+</a>
+</td>
+</tr>
+<tr>
+    <td>
+        <span class="badge bg-danger">急件</span>
+        <span class="badge bg-danger">NEW</span>
+    </td>
+<td>122223100213
+</td>
+<td>122223100213
+</td>
+<td>SX210-18
+</td>
+
+<td>8</td>
+<td>
+<small class="text-danger mr-1">
+<i class="fas fa-arrow-up"></i>
+12%
+</small>
+15
+</td>
+<td>
+<a href="#" class="text-muted">
+<i class="fas fa-search"></i>
+</a>
+</td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
+<script type="text/javascript">
+    
+
+
+    
+
+</script>
+</body>
+</html>

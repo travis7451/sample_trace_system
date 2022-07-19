@@ -1,0 +1,121 @@
+﻿
+<header>
+<meta charset="utf-8">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">產品驗證系統</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">產品追蹤</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link text-dark"  asp-area="" asp-controller="Home" asp-action="Login">登入</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+     </nav>
+    
+</header>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Sample Tracking list</h3>
+<h1 class="card-title">序號:</h1>
+<div class="project-actions text-right">
+<a class="btn btn-primary btn-sm" href="/Home/detail">
+<i class="fas fa-folder">
+</i>
+View
+</a>
+<a class="btn btn-info btn-sm" href="#">
+<i class="fas fa-pencil-alt">
+</i>
+Edit
+</a>
+<a class="btn btn-danger btn-sm" href="#">
+<i class="fas fa-trash">
+</i>
+Delete
+</a>
+</div>
+</div>
+
+<div class="card-body p-0">
+<table class="table table-sm table-hover">
+<thead>
+<tr>
+<th style="width: 1%">#</th>
+<th style="width: 10%">部門</th>
+<th style="width: 12%">作業員</th>
+<th style="width: 12%">交付日</th>
+<th style="width: 12%">歸還日</th>
+<th style="width: 35%">Progress</th>
+<th style="width: 5%">百分比</th>
+<th style="width: 13%; text-align:center;">待處理數量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td>RD</td>
+<td>Tommy</td>
+<td>2022/03/06</td>
+<td>2022/06/24</td>
+<td>
+<div class="progress progress-xs progress-striped active">
+
+<div class="progress-bar progress-bar-warning" style="width: 100%;"></div>
+</div>
+
+</td>
+<td><span class="badge bg-success" style="font-size:15px;">  100%  </span></td>
+<td style="text-align:center;">0</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>RVT</td>
+<td>Will</td>
+<td>2022/06/24</td>
+<td>2022/07/30</td>
+<td>
+<div class="progress progress-xs">
+<div class="progress-bar bg-primary" style="width: 70%"></div>
+</div>
+</td>
+<td><span class="badge bg-primary" style="font-size:15px;">  70%  </span></td>
+<td style="text-align:center;">30</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>QT</td>
+<td>Jack</td>
+<td>2022/07/30</td>
+<td>2022/09/30</td>
+<td>
+<div class="progress progress-xs progress-striped active">
+<div class="progress-bar bg-primary" style="width: 30%"></div>
+</div>
+</td>
+<td><span class="badge bg-danger" style="font-size:15px;">  30%  </span></td>
+<td style="text-align:center;">40</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+
+</div>
+
+</body>

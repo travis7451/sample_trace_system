@@ -1,0 +1,95 @@
+﻿<html lang="en">
+	<header>
+<meta charset="utf-8">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">產品驗證系統</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">產品追蹤</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link text-dark"  asp-area="" asp-controller="Home" asp-action="Login">登入</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+     </nav>
+    
+</header> 
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+<link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+
+<link rel="stylesheet" href="../../dist/css/adminlte.min.css?v=3.2.0">
+</head>
+<body >
+<section class="content">
+<div class="row">
+<div class="col-md-12">
+<div class="card card-primary">
+<div class="card-header">
+<span style="font-family:Microsoft JhengHei; font-size:25px;">編輯資料</span>
+<div class="card-tools">
+<button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+<i class="fas fa-minus"></i>
+</button>
+</div>
+</div>
+<div class="card-body">
+<div class="form-group">
+<label for="inputsns">產品序號起</label>
+<input type="text" id="inputSNS" class="form-control">
+</div>
+<div class="form-group">
+<label for="inputSNE">產品序號迄</label>
+<input type="text" id="inputSNE" class="form-control" >
+</div>
+<div class="form-group">
+<label for="inputMN">Model Name</label>
+<input type="text" id="inputMN" class="form-control" >
+</div>
+<div class="form-group">
+<label for="inputP/N">P/N</label>
+<input type="text" id="inputP/N" class="form-control" >
+</div>
+<div class="form-group">
+<label for="inputDescription">Description</label>
+<textarea id="inputDescription" class="form-control" rows="2"></textarea>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="row">
+<div class="col-12">
+<a href="#" class="btn btn-secondary">Cancel</a>
+<input type="submit" value="Save The Project" class="btn btn-success float-right">
+</div>
+</div>
+</section>
+<script src="../../plugins/jquery/jquery.min.js"></script>
+
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="../../dist/js/adminlte.min.js?v=3.2.0"></script>
+
+<script src="../../dist/js/demo.js"></script>
+</body>
+</html>

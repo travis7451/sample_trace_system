@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - 產品驗證系統</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    @*<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>*@
+
+    @*<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">*@
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+    <link rel="stylesheet" href="~/lib/plugins/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="~/lib/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+    <link rel="stylesheet" href="~/lib/dist/css/adminlte.min.css?v=3.2.0">
+
+    <link rel="stylesheet" href="~/lib/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+
+    <link rel="stylesheet" href="~/lib/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+
+    <link rel="stylesheet" href="~/lib/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="~/lib/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="~/lib/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/lib/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <link rel="stylesheet" href="~/lib/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <link rel="stylesheet" href="~/lib/plugins/bs-stepper/css/bs-stepper.min.css">
+    <link rel="stylesheet" href="~/lib/plugins/dropzone/min/dropzone.min.css">
+
+    <link rel="stylesheet" href="~/lib/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+    @*<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />*@
+    @*<link rel="stylesheet" href="~/產品驗證系統.styles.css" asp-append-version="true" />*@
+</head>
+<body>
+    <div >
+        @*<main role="main" class="pb-12">*@
+            @RenderBody()
+        @*</main>*@
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - 產品驗證系統 
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/dist/js/adminlte.min.js?v=3.2.0"></script>
+    <script src="~/lib/plugins/select2/js/select2.full.min.js"></script>
+
+<script src="~/lib/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+
+<script src="~/lib/plugins/moment/moment.min.js"></script>
+<script src="~/lib/plugins/inputmask/jquery.inputmask.min.js"></script>
+
+<script src="~/lib/plugins/daterangepicker/daterangepicker.js"></script>
+
+<script src="~/lib/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+
+<script src="~/lib/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<script src="~/lib/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+
+<script src="~/lib/plugins/bs-stepper/js/bs-stepper.min.js"></script>
+
+<script src="~/lib/plugins/dropzone/min/dropzone.min.js"></script>
+
+@*    <script src="~/js/site.js" asp-append-version="true"></script>*@
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
